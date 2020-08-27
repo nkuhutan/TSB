@@ -1,0 +1,4 @@
+NKuhutan\TSB\TestNG\APITest.class
+NKuhutan\TSB\Tools\ReadConfig.class
+NKuhutan\TSB\StepDefs\Steps.class
+NKuhutan\TSB\TestNG\WebTest.class

@@ -1,0 +1,303 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-27T21:34:22.113Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2830000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "NKuhutan.TSB.StepDefs.Steps.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Web Version Test",
+        "description": "",
+        "id": "nkuhutan-test-solution;web-version-test",
+        "after": [
+          {
+            "result": {
+              "duration": 2068000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "NKuhutan.TSB.StepDefs.Steps.after(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2149000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Go to TradeMe and navigate Categories",
+            "match": {
+              "location": "NKuhutan.TSB.StepDefs.Steps.navigate()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5307000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Check there is at least one listing in the TradeMe UsedCars category",
+            "match": {
+              "location": "NKuhutan.TSB.StepDefs.Steps.checkListings()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 979000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Check that the make Kia exists",
+            "match": {
+              "location": "NKuhutan.TSB.StepDefs.Steps.checkKia()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertTrue(Assert.java:44)\r\n\tat org.testng.Assert.assertTrue(Assert.java:54)\r\n\tat NKuhutan.TSB.TestNG.WebTest.checkKeyDetails(WebTest.java:117)\r\n\tat NKuhutan.TSB.StepDefs.Steps.checkKeyDetails(Steps.java:67)\r\n\tat ✽.Query any existing Used Car listing and confirm that the following details are shown for that car(file:///C:/Users/NKuhutan/Documents/git_TSB/src/test/resources/features/Exam.feature:10)\r\n",
+              "duration": 13987000000,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "Query any existing Used Car listing and confirm that the following details are shown for that car",
+            "match": {
+              "location": "NKuhutan.TSB.StepDefs.Steps.checkKeyDetails(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Number plate"
+                ]
+              },
+              {
+                "cells": [
+                  "Kilometres"
+                ]
+              },
+              {
+                "cells": [
+                  "Body"
+                ]
+              },
+              {
+                "cells": [
+                  "Seats"
+                ]
+              },
+              {
+                "cells": [
+                  "Fuel type"
+                ]
+              },
+              {
+                "cells": [
+                  "Engine"
+                ]
+              },
+              {
+                "cells": [
+                  "Transmission"
+                ]
+              },
+              {
+                "cells": [
+                  "History"
+                ]
+              },
+              {
+                "cells": [
+                  "Registration expires"
+                ]
+              },
+              {
+                "cells": [
+                  "WoF expires"
+                ]
+              },
+              {
+                "cells": [
+                  "Model detail"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@NKuhutan"
+          },
+          {
+            "name": "@WebTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-27T21:34:49.458Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "NKuhutan.TSB.StepDefs.Steps.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "API Version Test",
+        "description": "",
+        "id": "nkuhutan-test-solution;api-version-test",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "NKuhutan.TSB.StepDefs.Steps.after(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 557000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "There is more than 1 listing of Used Cars in the API",
+            "match": {
+              "location": "NKuhutan.TSB.StepDefs.Steps.apiCheckListings()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 37000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Check if Kia exists from the API",
+            "match": {
+              "location": "NKuhutan.TSB.StepDefs.Steps.apiCheckKia()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertTrue(Assert.java:44)\r\n\tat org.testng.Assert.assertTrue(Assert.java:54)\r\n\tat NKuhutan.TSB.TestNG.APITest.verifyKeyDetails(APITest.java:57)\r\n\tat NKuhutan.TSB.StepDefs.Steps.apiCheckKeyDetails(Steps.java:90)\r\n\tat ✽.Query the API car details of an specific searched car(file:///C:/Users/NKuhutan/Documents/git_TSB/src/test/resources/features/Exam.feature:27)\r\n",
+              "duration": 37000000,
+              "status": "failed"
+            },
+            "line": 27,
+            "name": "Query the API car details of an specific searched car",
+            "match": {
+              "location": "NKuhutan.TSB.StepDefs.Steps.apiCheckKeyDetails(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "NumberPlate"
+                ]
+              },
+              {
+                "cells": [
+                  "Odometer"
+                ]
+              },
+              {
+                "cells": [
+                  "BodyStyle"
+                ]
+              },
+              {
+                "cells": [
+                  "Seats"
+                ]
+              },
+              {
+                "cells": [
+                  "Fuel"
+                ]
+              },
+              {
+                "cells": [
+                  "EngineSize"
+                ]
+              },
+              {
+                "cells": [
+                  "Transmission"
+                ]
+              },
+              {
+                "cells": [
+                  "ImportHistory"
+                ]
+              },
+              {
+                "cells": [
+                  "RegistrationExpires"
+                ]
+              },
+              {
+                "cells": [
+                  "WofExpires"
+                ]
+              },
+              {
+                "cells": [
+                  "Model"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@NKuhutan"
+          },
+          {
+            "name": "@APITest"
+          }
+        ]
+      }
+    ],
+    "name": "NKuhutan Test Solution",
+    "description": "  Check",
+    "id": "nkuhutan-test-solution",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Exam.feature",
+    "tags": [
+      {
+        "name": "@NKuhutan",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

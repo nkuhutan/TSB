@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 32.596 sec <<< FAILURE!
+runScenario(NKuhutan.TSB.Runners.RunnerTest)  Time elapsed: 27.445 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at NKuhutan.TSB.TestNG.WebTest.checkKeyDetails(WebTest.java:117)
+	at NKuhutan.TSB.StepDefs.Steps.checkKeyDetails(Steps.java:67)
+	at ?.Query any existing Used Car listing and confirm that the following details are shown for that car(file:///C:/Users/NKuhutan/Documents/git_TSB/src/test/resources/features/Exam.feature:10)
+
+runScenario(NKuhutan.TSB.Runners.RunnerTest)  Time elapsed: 0.639 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at NKuhutan.TSB.TestNG.APITest.verifyKeyDetails(APITest.java:57)
+	at NKuhutan.TSB.StepDefs.Steps.apiCheckKeyDetails(Steps.java:90)
+	at ?.Query the API car details of an specific searched car(file:///C:/Users/NKuhutan/Documents/git_TSB/src/test/resources/features/Exam.feature:27)
+
