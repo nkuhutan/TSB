@@ -8,16 +8,17 @@ Feature: NKuhutan Test Solution
     Then Check there is at least one listing in the TradeMe UsedCars category
     Then Check that the make Kia exists
     Then Query any existing Used Car listing and confirm that the following details are shown for that car
-    | Number plate          |
+		| 2010 Audi A3	        |
+		| Number plate          |
 		| Kilometres            |    
-		| Body			            |
-		| Seats			            |
-		| Fuel type	            |
-		| Engine	  	          |
+		| Body		        |
+		| Seats		        |
+		| Fuel type	        |
+		| Engine		|
 		| Transmission          |
-		| History		            |
+		| History		|
 		| Registration expires	|
-		| WoF expires		        |		
+		| WoF expires	        |		
 		| Model detail          |																		
   
   @APITest
@@ -25,15 +26,17 @@ Feature: NKuhutan Test Solution
     Given There is more than 1 listing of Used Cars in the API
     Then Check if Kia exists from the API
     Then Query the API car details of an specific searched car
-    | NumberPlate		        |
+		| 2010 Audi A3		    |
+		| Audi			    |    
+		| NumberPlate		    |
 		| Odometer	            |
 		| BodyStyle	            |		
-		| Seats			            |
-		| Fuel	  		          |
-		| EngineSize	  	      |
-		| Transmission          |
-		| ImportHistory		      |
-		| RegistrationExpires		|
-		| WofExpires		        |		
-		| Model         				|	    
+		| Seats			    |
+		| Fuel	  		    |
+		| EngineSize	  	    |
+		| Transmission        	    |
+		| ImportHistory		    |
+		| RegistrationExpires	    |
+		| WofExpires		    |		
+		| Model                     |	    
     
