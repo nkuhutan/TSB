@@ -1,7 +1,7 @@
-#Platform:
--Build tool used Maven
--TestNG testing framework
--Java and Selenium CodeBase
+# Platform:
+* Build tool used Maven
+* TestNG testing framework
+* Java and Selenium CodeBase
 
 # How to run:
 1. Open Command Line and Go To Your Project Folder
