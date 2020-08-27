@@ -12,6 +12,7 @@ import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.But;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
@@ -63,8 +64,10 @@ public class Steps
   
   @Then("^Query any existing Used Car listing and confirm that the following details are shown for that car$")
   public void checkKeyDetails(DataTable table) throws Throwable {
-	  List<String> data = table.asList();
-	  wtest.checkKeyDetails("2010 Audi A3", data);
+	  List<String> data = new ArrayList<String>(table.asList());
+	  String searchText = data.get(0);
+	  String removeFirst = data.remove(0);
+	  wtest.checkKeyDetails(searchText, data);
   }  
   
   @After
@@ -86,8 +89,13 @@ public class Steps
   
   @Then("^Query the API car details of an specific searched car$")
   public void apiCheckKeyDetails(DataTable table) throws Throwable {
-	  List<String> data = table.asList();
-	  atest.verifyKeyDetails("2010 Audi A3", "Audi", data);
+	  List<String> data = new ArrayList<String>(table.asList());
+	  String searchText = data.get(0);
+	  String searchMake = data.get(1);
+	  String removeFirst = data.remove(0);
+	  String removeSecond = data.remove(0);
+//	  System.out.println(data.toString());
+	  atest.verifyKeyDetails(searchText, searchMake, data);
   }   
   
 
