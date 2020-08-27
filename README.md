@@ -11,11 +11,11 @@
 4. Run All - mvn test
 
 # Project Files:
-POM: ./pom.xml
-Feature file: ./src/test/resources/features/Exam.feature
-Step Definition: ./src/test/java/NKuhutan/TSB/StepDefs/Steps.java
-Runner Class: ./src/test/java/NKuhutan/TSB/Runners/RunnerTest.java
-And all other files the usual
+* POM: ./pom.xml
+* Feature file: ./src/test/resources/features/Exam.feature
+* Step Definition: ./src/test/java/NKuhutan/TSB/StepDefs/Steps.java
+* Runner Class: ./src/test/java/NKuhutan/TSB/Runners/RunnerTest.java
+* And all other files the usual
 
 #Note:
 I'm always using "2010 Audi A3" as a search text (including "Audi" as the make for API).
