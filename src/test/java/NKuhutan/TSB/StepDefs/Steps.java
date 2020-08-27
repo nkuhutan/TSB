@@ -94,7 +94,7 @@ public class Steps
 	  String searchMake = data.get(1);
 	  String removeFirst = data.remove(0);
 	  String removeSecond = data.remove(0);
-//	  System.out.println(data.toString());
+	  System.out.println(data.toString());
 	  atest.verifyKeyDetails(searchText, searchMake, data);
   }   
   

@@ -9,6 +9,7 @@
 2. Run WebTest only - mvn test -Dcucumber.options="--tag @WebTest"
 3. Run APITest only - mvn test -Dcucumber.options="--tag @APITest"
 4. Run All - mvn test
+5. You can see a recorder run in here ./NKuhutanTSB_Exam_ScreenRecord.mp4
 
 # Project Files:
 * POM: ./pom.xml
